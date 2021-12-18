@@ -10,8 +10,8 @@
     <title>Nauka-projekt99</title>
 </head>
 <body>
-<header class="site-header">
-    <div class="site-header__blackout blackout"></div>
+<header class="site-header ">
+    <div class="site-header__blackout blackout">
     <nav>
         <ul class="site-header__nav nav">
             <li class="nav__item"><a class="nav__link" href="#start"></a>Start
@@ -23,11 +23,12 @@
             <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</li>
         </ul>
     </nav>
+</div>
     <h1 class="site-header__h1 heading--h1">Restauracja Dolce VIta</h1>
     <a href="#menu" class="site-header_button btn btn--red btn--circle">Menu</a>
 </header>
 <main>
-    <section class="site-sections" id="start"></section>
+    <section class="site-sections" id="start">
         <h2 class="heading--h2">Start</h2>
         <div class="container">
             <div class="row">
@@ -36,25 +37,44 @@
                 </div>
             </div>
         </div>
+</section>
     </main>
-<section class="site-sections" id="menu"></section>
-    <h2 class="heading--h2">Menu</h2>
+<section class="site-sections site-sections--bg-color" id="menu">
+    <h2 class="heading--h2 text-color-white">Menu</h2>
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col col--md50 col--lg25">
+                <div class="image-box">
+                    <div class="image-box__image"></div>
+                    <div class="image-box__text">Lorem, ipsum dolor.</div>
+                </div>
+                <div class="image-box">
+                    <div class="image-box__image image-box__image--next"></div>
+                    <div class="image-box__text">Lorem, ipsum dolor.</div>
+                </div>
+                <div class="image-box">
+                    <div class="image-box__image"></div>
+                    <div class="image-box__text">Lorem, ipsum dolor.</div>
+                </div>
+                <div class="image-box">
+                    <div class="image-box__image image-box__image--next"></div>
+                    <div class="image-box__text">Lorem, ipsum dolor.</div>
+                </div>
              </div>
         </div>
     </div>
+</section>
 
-<section class="site-sections" id="menu"></section>
+<section class="site-sections" id="menu">
     <h2 class="heading--h2">Lokaliacja</h2>
     <div class="container">
         <div class="row">
             <div class="col">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86487.43777200264!2d8.29945834219623!3d47.358621655432714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479009f6552b0ad5%3A0x6ce64332aeeb16ba!2sGoogle%2C%20Zurich!5e0!3m2!1spl!2sch!4v1639836350930!5m2!1spl!2sch" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86487.43777200264!2d8.29945834219623!3d47.358621655432714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479009f6552b0ad5%3A0x6ce64332aeeb16ba!2sGoogle%2C%20Zurich!5e0!3m2!1spl!2sch!4v1639836350930!5m2!1spl!2sch" width="100%" height="450" style="box-shadow:  0 0 5px 1px black;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
+</section>
 <script src="../js/javascript.js"></script>
 </body>
 </html>
