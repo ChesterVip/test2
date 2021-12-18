@@ -1,0 +1,44 @@
+@use'../1-settings/' as *;
+@use'../2-tools/' as *;
+.col{
+    width: 100%;
+    padding: 0 $gutter $gutter $gutter $gutter;
+    
+    &--md50{
+        @include medium{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+        &--md33{
+            @include medium{
+                flex: 0 0 (100% / 3);
+                max-width: (100% / 3);
+            }
+        }
+        &--md25{
+            @include medium{
+                flex: 0 0 (100% / 4);
+                max-width: (100% / 4);
+            }
+    }
+    &--lg50{
+        @include large{
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+        &--lg33{
+            @include large{
+                flex: 0 0 (100% / 3);
+                max-width: (100% / 3);
+            }
+        }
+        &--lg25{
+            @include large{
+                flex: 0 0 (100% / 4);
+                max-width: (100% / 4);
+            }
+    }
+}
