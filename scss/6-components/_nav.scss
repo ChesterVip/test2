@@ -2,12 +2,11 @@
 @use '../2-tools/' as *;
 
 .nav{
-    z-index: 2;
     &__item{
-        font-size: 3.2rem;
+        font-size: 4rem;
         @include medium{
             display: inline-block;
-            width: 23px;
+            width: 23%;
         }
     }
     &__link{
@@ -15,10 +14,18 @@
         padding: $grid-base;
         border-radius: .4rem;
         display: block;
-        text-align: center;
         transition: .5s;
-        &:hover{
-            background-color: $color-red;
+        z-index: 99;
+        @include medium{
+            display: block;
+            width: 23rem;
+            text-align: center;
+          
+            &:hover{
+                background-color: $color-red;
+                cursor: pointer;
+            }
+        
         }
     }
 }

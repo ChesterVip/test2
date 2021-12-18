@@ -1,13 +1,19 @@
 @use'../1-settings/' as *;
 @use'../2-tools/' as *;
 .col{
+    display: inline-block;
     width: 100%;
     padding: 0 $gutter $gutter $gutter $gutter;
-    
     &--md50{
         @include medium{
             flex: 0 0 50%;
             max-width: 50%;
+            float: left;
+            padding: auto;
+            margin: 11.5%;
+            display: block;
+            align-items: center;
+
         }
     }
 
@@ -37,8 +43,12 @@
         }
         &--lg25{
             @include large{
-                flex: 0 0 (100% / 4);
-                max-width: (100% / 4);
+                flex: 0 0 25%;
+                max-width: 25%;
+                float: left;
+                margin: 10% 3.75%;
+                display: block;
+
             }
     }
 }

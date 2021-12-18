@@ -1,0 +1,5 @@
+@use '../1-settings/' as *;
+.site-footer{
+    background-color: $color-bg-footer;
+    color: $color-white;
+}
