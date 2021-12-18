@@ -32,6 +32,7 @@ transition: .5s;
     }
 }
 &--circle{
+    background: url('../assets/bcg--circle.jpg') cover/center;
     border-radius: 50%;
     width: 10rem;
     height: 10rem;

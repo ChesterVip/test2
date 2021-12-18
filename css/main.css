@@ -166,6 +166,35 @@ p {
   }
 }
 
+.blackout {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  z-index: 2;
+}
+.nav__item {
+  font-size: 3.2rem;
+}
+@media screen and (min-width: 768px) {
+  .nav__item {
+    display: inline-block;
+    width: 23px;
+  }
+}
+.nav__link {
+  color: #eff0f3;
+  padding: 10px;
+  border-radius: 0.4rem;
+  display: block;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.nav__link:hover {
+  background-color: #74030e;
+}
+
 .btn {
   color: #eff0f3;
   border: none;
@@ -200,6 +229,7 @@ p {
   background-color: rgba(255, 255, 255, 0.25);
 }
 .btn--circle {
+  background: url("../assets/bcg--circle.jpg") cover/center;
   border-radius: 50%;
   width: 10rem;
   height: 10rem;
@@ -208,6 +238,7 @@ p {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -229,4 +260,32 @@ a {
   font-size: 5rem;
   width: 100%;
   text-align: center;
+}
+
+.site-header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background: url("../assets/img/start.jpeg") center/cover;
+}
+.site-header__h1 {
+  position: absolute;
+  bottom: 40%;
+  width: 100%;
+  text-align: center;
+}
+.site-header_button {
+  position: absolute;
+  bottom: 15%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.site-header__blackout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.site-sections {
+  padding: 3rem 0;
 }/*# sourceMappingURL=main.css.map */
