@@ -359,6 +359,57 @@ a {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
+.social {
+  width: 200px;
+  height: 83px;
+  background-color: #eff0f3;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+  z-index: 9999;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.social:hover {
+  left: 0;
+  cursor: pointer;
+}
+.social__item {
+  background: url("../assets/img/sprites_socials.png");
+  width: 43px;
+  height: 42px;
+  overflow: hiden;
+  display: inline-block;
+  margin: 20px 0;
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.social__item--facebook {
+  background-position: 0px -1px;
+}
+.social__item--facebook:hover {
+  background-position: 0px -43px;
+}
+.social__item--twitter {
+  background-position: -52px -1px;
+}
+.social__item--twitter:hover {
+  background-position: -52px -43px;
+}
+.social__item--youtube {
+  background-position: -104px -1px;
+}
+.social__item--youtube:hover {
+  background-position: -104px -43px;
+}
+.social__item--insta {
+  background-position: -155px -1px;
+}
+.social__item--insta:hover {
+  background-position: -155px -43px;
+}
+
 .site-header {
   height: 100vh;
   width: 100vw;
@@ -424,6 +475,12 @@ a {
 .site-footer {
   background-color: #201b13;
   color: #eff0f3;
+}
+
+.site-body__social {
+  position: fixed;
+  left: -135px;
+  bottom: 20vh;
 }
 
 .text-color-white {
