@@ -1,6 +1,7 @@
 @use '../1-settings/' as *;
 @use '../2-tools/' as *;
 .heading{
+    z-index: 2;
 
     &--h1{
         color: $color-white;
