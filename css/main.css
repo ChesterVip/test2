@@ -127,7 +127,7 @@ p {
     max-width: 50%;
     float: left;
     padding: auto;
-    margin: 11.5%;
+    margin: 5% 11.5%;
     display: block;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -189,7 +189,7 @@ p {
 @media screen and (min-width: 768px) {
   .nav__item {
     display: inline-block;
-    width: 23%;
+    width: 24%;
   }
 }
 .nav__link {
