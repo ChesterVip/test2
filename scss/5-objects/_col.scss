@@ -1,54 +1,50 @@
-@use'../1-settings/' as *;
-@use'../2-tools/' as *;
-.col{
-    display: inline-block;
+@use '../1-settings/' as *;
+@use '../2-tools/' as *;
+
+.col {
+
     width: 100%;
-    padding: 0 $gutter $gutter $gutter $gutter;
-    &--md50{
-        @include medium{
-            flex: 0 0 50%;
-            max-width: 50%;
-            float: left;
-            padding: auto;
-            margin: 5% 11.5%;
-            display: block;
-            align-items: center;
+    padding: 0 $gutter $gutter $gutter;
 
-        }
-    }
-
-        &--md33{
-            @include medium{
-                flex: 0 0 (100% / 3);
-                max-width: (100% / 3);
-            }
-        }
-        &--md25{
-            @include medium{
-                flex: 0 0 (100% / 4);
-                max-width: (100% / 4);
-            }
-    }
-    &--lg50{
-        @include large{
+    &--md50 {
+        @include medium {
             flex: 0 0 50%;
             max-width: 50%;
         }
     }
-        &--lg33{
-            @include large{
-                flex: 0 0 (100% / 3);
-                max-width: (100% / 3);
-            }
+    
+    &--md33 {
+        @include medium {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
         }
-        &--lg25{
-            @include large{
-                flex: 0 0 25%;
-                max-width: 25%;
-                float: left;
-                margin: 10% 3.75%;
-                display: block;
-
-            }
+    }
+    
+    &--md25 {
+        @include medium {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+    
+    &--lg50 {
+        @include large {
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    
+    &--lg33 {
+        @include large {
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+    
+    &--lg25 {
+        @include large {
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
     }
 }

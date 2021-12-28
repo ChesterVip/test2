@@ -6,25 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"rel="stylesheet">
     <title>Restauracja Dolce Vita Zurich</title>
 </head>
 <body class="site-body">
     <header class="site-header">
         <div class="site-header__blackout blackout"></div>
-        <nav class="row">
+        <nav>
             <ul class="site-header__nav nav">
-                <li class="nav__item"><a class="nav__link" href="#start">Start</a>
-                </li>
-                <li class="nav__item"><a class="nav__link" href="#menu">Menu</a>
-                </li>
-                <li class="nav__item"><a class="nav__link" href="#localisation">Lokalizacja</a>
-                </li>
+                <li class="nav__item"><a class="nav__link" href="#start">Start</a></li>
+                <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
+                <li class="nav__item"><a class="nav__link" href="#localisation">Lokalizacja</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contact">Kontakt</a></li>
             </ul>
         </nav>
         <h1 class="site-header__h1 heading--h1">Restauracja Dolce Vita</h1>
-        <a href="#menu" class="site-header_button btn btn--red btn--circle">Menu</a>
+        <a class="site-header__button btn btn--red btn--circle" href="#menu">Menu</a>
     </header>
     <div class="social site-body__social">
         <div class="social__item social__item--twitter"></div>
@@ -46,29 +42,37 @@
 <section class="site-sections site-sections--bg-color" id="menu">
     <h2 class="heading--h2 text-color-white">Menu</h2>
     <div class="container">
-        <div class="col site-sections">
-                <div class="image-box col--lg25 col--md50">
+        <div class="row">
+            <div class="col col--md50 col--lg25">
+                <div class="image-box">
                     <div class="image-box__image"></div>
                     <div class="image-box__text">Lorem, ipsum dolor.</div>
                 </div>
-                <div class="image-box col--lg25 col--md50">
-                    <div class="image-box__image image-box__image--next"></div>
-                    <div class="image-box__text">Lorem, ipsum dolor.</div>
-                </div>
-                <div class="image-box col--lg25 col--md50">
-                    <div class="image-box__image"></div>
-                    <div class="image-box__text">Lorem, ipsum dolor.</div>
-                </div>
-                <div class="image-box col--lg25 col--md50">
+            </div>
+            <div class="col col--md50 col--lg25">
+                <div class="image-box">
                     <div class="image-box__image image-box__image--next"></div>
                     <div class="image-box__text">Lorem, ipsum dolor.</div>
                 </div>
             </div>
+            <div class="col col--md50 col--lg25">
+                <div class="image-box">
+                    <div class="image-box__image"></div>
+                    <div class="image-box__text">Lorem, ipsum dolor.</div>
+                </div>
+            </div>
+            <div class="col col--md50 col--lg25">
+                <div class="image-box">
+                    <div class="image-box__image image-box__image--next"></div>
+                    <div class="image-box__text">Lorem, ipsum dolor.</div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
 <section class="site-sections" id="localisation">
-    <h2 class="heading--h2">Lokaliacja</h2>
+    <h2 class="heading--h2">Lokalizacja</h2>
     <div class="container">
         <div class="row">
             <div class="col">
@@ -78,27 +82,26 @@
     </div>
 </section>
 
-<section class="site-sections site-contact" id="contact">
-    <div class="blackout site-contact__blackout"> </div>
-    <h2 class="heading--h2">Kontakt</h2>
+<section class="site-contact" id="contact">
+    <div class="blackout site-contact__blackout"></div>
+    <h2 class="heading--h2 site-contact__h2">Kontakt</h2>
     <div class="container">
         <div class="row">
             <div class="col">
-                <form action="" class="form site-contact__form">
+                <form class="form site-contact__form">
                     <label for="mail" class="form__label">Podaj twój e-mail</label>
                     <input class="form__item" id="mail" type="text">
                     <label for="subject" class="form__label">Temat wiadomości</label>
-                    <input class="form__item" id="messege" type="text">
-                    <label for="subject" class="form__label">Tresc wiadomości</label>
+                    <input class="form__item" id="subject" type="text">
+                    <label for="message" class="form__label">Tresc wiadomości</label>
                     <textarea class="form__item" id="message" cols="15" rows="5"></textarea>
-                    <input class="form__item btn btn--outline" type="submit" value="Wyslij">
+                    <input class="form__item btn btn--outline" type="submit" value="Wyślij">
                 </form>
             </div>
         </div>
     </div>
     
 </section>
-
 </main>
     <footer class="site-footer">
         <div class="container">

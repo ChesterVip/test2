@@ -1,31 +1,26 @@
 @use '../1-settings/' as *;
 @use '../2-tools/' as *;
 
-.nav{
-    &__item{
-        font-size: 4rem;
-        @include medium{
+.nav {
+
+    &__item {
+        font-size: 3.2rem;
+        @include medium {
             display: inline-block;
-            width: 24%;
+            width: 23%;
         }
     }
-    &__link{
+
+    &__link {
         color: $color-white;
         padding: $grid-base;
         border-radius: .4rem;
         display: block;
-        transition: .5s;
-        z-index: 99;
-        @include medium{
-            display: block;
-            width: 23rem;
-            text-align: center;
-          
-            &:hover{
-                background-color: $color-red;
-                cursor: pointer;
-            }
-        
+        text-align: center;
+        transition-duration: .5s;
+        &:hover {
+            background-color: $color-red;
         }
     }
+
 }
